@@ -366,7 +366,7 @@ class Builtin(CompiledObject, IsScope):
     @memoize
     def get_by_name(self, name):
         res = [n for n in self.get_defined_names() if n.get_code() == name]
-        print("[n for n in self.get_defined_names() if n.get_code() == name] => {0!r}, name => {1!r}, self.get_defined_names() => {3!r}".format(res, name, self.get_defined_names()))
+        print("[n for n in self.get_defined_names() if n.get_code() == name] => {0!r}, name => {1!r}, self.get_defined_names() => {2!r}".format(res, name, self.get_defined_names()))
         item = res[0]
         return item.parent
 
